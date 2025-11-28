@@ -1,0 +1,274 @@
+{
+  "title": "Shards of the Skyfire",
+  "universe": "High fantasy – dragons, ruins, ancient magic",
+  "tone": "Dramatic but friendly Game Master",
+  "startId": "village_square",
+  "nodes": {
+    "village_square": {
+      "id": "village_square",
+      "description": "The sun is setting over the village of Emberfall. Villagers whisper about a falling star that crashed into the nearby Whispering Woods. You stand in the cobblestone square with your travel pack ready.",
+      "prompt": "You can head towards the woods to investigate, or visit the tavern to gather rumors. What do you do?",
+      "options": [
+        {
+          "nextId": "forest_edge",
+          "keywords": ["woods", "forest", "star", "whispering"],
+          "summary": "You head towards the Whispering Woods."
+        },
+        {
+          "nextId": "tavern_intro",
+          "keywords": ["tavern", "inn", "bar", "rumor"],
+          "summary": "You push open the door of the Emberfall tavern."
+        }
+      ]
+    },
+    "tavern_intro": {
+      "id": "tavern_intro",
+      "description": "Inside the tavern, the air is warm and loud. A cloaked traveler sits alone, eyes glinting in the candlelight. The barkeep polishes a mug and watches you approach.",
+      "prompt": "You can talk to the traveler, or ask the barkeep about the falling star. What do you do?",
+      "options": [
+        {
+          "nextId": "traveler_clue",
+          "keywords": ["traveler", "cloaked", "stranger", "person"],
+          "summary": "You sit beside the cloaked traveler."
+        },
+        {
+          "nextId": "barkeep_clue",
+          "keywords": ["barkeep", "bartender", "bar", "keeper"],
+          "summary": "You lean on the counter and speak to the barkeep."
+        }
+      ]
+    },
+    "traveler_clue": {
+      "id": "traveler_clue",
+      "description": "The traveler lowers their hood, revealing sharp green eyes. They whisper that the falling star is no star at all, but a fragment of the Skyfire Crystal, guarded by spirits in the woods.",
+      "prompt": "The traveler urges you to hurry to the Whispering Woods before others claim it. Do you head to the woods now, or stay longer in the tavern?",
+      "options": [
+        {
+          "nextId": "forest_edge",
+          "keywords": ["woods", "forest", "go", "leave", "yes"],
+          "summary": "You leave the tavern and make for the Whispering Woods."
+        },
+        {
+          "nextId": "tavern_delay",
+          "keywords": ["stay", "wait", "tavern", "drink"],
+          "summary": "You linger in the tavern a little longer."
+        }
+      ]
+    },
+    "barkeep_clue": {
+      "id": "barkeep_clue",
+      "description": "The barkeep tells you villagers heard a thunderous crash and saw blue fire between the trees. Some hunters never came back. He presses a small healing draught into your hand 'just in case'.",
+      "prompt": "With this new knowledge, do you head to the woods now, or keep asking questions in the tavern?",
+      "options": [
+        {
+          "nextId": "forest_edge",
+          "keywords": ["woods", "forest", "go", "leave", "yes"],
+          "summary": "You thank the barkeep and leave for the Whispering Woods."
+        },
+        {
+          "nextId": "tavern_delay",
+          "keywords": ["stay", "wait", "tavern", "questions"],
+          "summary": "You decide to stay in the tavern a bit longer."
+        }
+      ]
+    },
+    "tavern_delay": {
+      "id": "tavern_delay",
+      "description": "You stay a while, listening to scattered rumors. By the time you finally leave, the sky is fully dark and a chilly mist curls between the houses.",
+      "prompt": "The streets are empty. Do you still head into the woods at night, or go home and try again at dawn?",
+      "options": [
+        {
+          "nextId": "forest_edge_night",
+          "keywords": ["woods", "forest", "night", "go"],
+          "summary": "You decide to brave the woods at night."
+        },
+        {
+          "nextId": "give_up",
+          "keywords": ["home", "sleep", "later", "dawn"],
+          "summary": "You decide it's too dangerous tonight and head home."
+        }
+      ]
+    },
+    "give_up": {
+      "id": "give_up",
+      "description": "You return home, promising yourself you will investigate another time. By morning, news spreads that others claimed the Skyfire shard. The chance has passed you by.",
+      "prompt": "This ends your brief adventure in Emberfall. If you'd like to try again and make different choices, say 'restart'.",
+      "ending": true,
+      "options": []
+    },
+    "forest_edge": {
+      "id": "forest_edge",
+      "description": "At the edge of the Whispering Woods, the trees rise tall and dark. A faint blue glow pulses deeper within. The path splits into a narrow hunter's trail and a wider, safer road.",
+      "prompt": "You can take the narrow trail for a faster route, or the safe road around. What do you do?",
+      "options": [
+        {
+          "nextId": "spirit_glade",
+          "keywords": ["narrow", "trail", "fast", "shortcut"],
+          "summary": "You choose the narrow hunter's trail."
+        },
+        {
+          "nextId": "safe_road",
+          "keywords": ["safe", "road", "wide", "slow"],
+          "summary": "You follow the safer forest road."
+        }
+      ]
+    },
+    "forest_edge_night": {
+      "id": "forest_edge_night",
+      "description": "Under the cover of night, the Whispering Woods feels alive with unseen eyes. The blue glow of the fallen star is brighter now, but so are the shadows between the trees.",
+      "prompt": "Do you move quietly along the narrow trail, or stride confidently down the main path?",
+      "options": [
+        {
+          "nextId": "spirit_glade",
+          "keywords": ["narrow", "trail", "quiet", "sneak"],
+          "summary": "You slip quietly along the narrow trail."
+        },
+        {
+          "nextId": "safe_road",
+          "keywords": ["main", "path", "road", "confident"],
+          "summary": "You walk the main path, trusting your courage."
+        }
+      ]
+    },
+    "safe_road": {
+      "id": "safe_road",
+      "description": "The safe road bends slowly through the woods. After a long walk, you reach a clearing where the earth is scorched and a shallow crater glows with blue light.",
+      "prompt": "Shards of the Skyfire Crystal hum with power in the crater. Do you step into the crater to claim one, or search the perimeter first?",
+      "options": [
+        {
+          "nextId": "crystal_claim",
+          "keywords": ["step", "crater", "claim", "take"],
+          "summary": "You carefully step into the crater."
+        },
+        {
+          "nextId": "perimeter_spirit",
+          "keywords": ["search", "perimeter", "around", "look"],
+          "summary": "You walk around the crater, searching the edges first."
+        }
+      ]
+    },
+    "spirit_glade": {
+      "id": "spirit_glade",
+      "description": "The narrow trail opens into a hidden glade. Floating lights circle a central shard of radiant blue crystal. Forest spirits, faint and translucent, watch you silently.",
+      "prompt": "You sense they are testing your intentions. Do you bow respectfully, speak to the spirits, or rush forward to grab the shard?",
+      "options": [
+        {
+          "nextId": "spirit_blessing",
+          "keywords": ["bow", "respect", "kneel"],
+          "summary": "You bow respectfully to the spirits."
+        },
+        {
+          "nextId": "spirit_dialogue",
+          "keywords": ["speak", "talk", "ask", "spirits"],
+          "summary": "You address the spirits and explain why you seek the shard."
+        },
+        {
+          "nextId": "crystal_curse",
+          "keywords": ["grab", "rush", "take", "steal"],
+          "summary": "You dash forward to grab the shard without permission."
+        }
+      ]
+    },
+    "spirit_blessing": {
+      "id": "spirit_blessing",
+      "description": "The spirits shimmer brighter, pleased by your respect. The crystal floats towards you, its edges softening to a gentle glow.",
+      "prompt": "You feel its warmth in your hands. Do you vow to use its power to protect Emberfall, or keep its purpose secret?",
+      "options": [
+        {
+          "nextId": "hero_ending",
+          "keywords": ["protect", "vow", "village", "emberfall"],
+          "summary": "You swear to protect Emberfall with the Skyfire shard."
+        },
+        {
+          "nextId": "secret_ending",
+          "keywords": ["secret", "keep", "myself"],
+          "summary": "You quietly decide to keep the shard's purpose to yourself."
+        }
+      ]
+    },
+    "spirit_dialogue": {
+      "id": "spirit_dialogue",
+      "description": "You speak honestly about your curiosity and desire to understand the falling star. The spirits listen, then one steps forward, its voice like wind through leaves.",
+      "prompt": "It offers you a choice: take a single shard now, or accept a hidden blessing that reveals its power only in a future moment of need. What do you choose?",
+      "options": [
+        {
+          "nextId": "crystal_claim",
+          "keywords": ["shard", "take", "now"],
+          "summary": "You choose to take a visible shard now."
+        },
+        {
+          "nextId": "hero_ending",
+          "keywords": ["blessing", "future", "need"],
+          "summary": "You accept the hidden blessing."
+        }
+      ]
+    },
+    "crystal_claim": {
+      "id": "crystal_claim",
+      "description": "You step into the crater and grasp a shard of the Skyfire Crystal. Power tingles up your arm, but it does not reject you.",
+      "prompt": "The forest seems to hold its breath. Do you leave quickly with the shard, or stay to study its glow?",
+      "options": [
+        {
+          "nextId": "escape_ending",
+          "keywords": ["leave", "go", "quick", "run"],
+          "summary": "You secure the shard and leave the woods."
+        },
+        {
+          "nextId": "secret_ending",
+          "keywords": ["study", "stay", "watch", "glow"],
+          "summary": "You remain, lost in study of the Skyfire shard."
+        }
+      ]
+    },
+    "perimeter_spirit": {
+      "id": "perimeter_spirit",
+      "description": "As you search the edges of the crater, a small spirit emerges from the bark of a tree, eyes like tiny stars. It watches you carefully.",
+      "prompt": "Do you greet the spirit politely, ignore it and head for the crystal, or ask it for guidance?",
+      "options": [
+        {
+          "nextId": "spirit_dialogue",
+          "keywords": ["greet", "hello", "hi", "polite"],
+          "summary": "You greet the spirit with respect."
+        },
+        {
+          "nextId": "crystal_curse",
+          "keywords": ["ignore", "crystal", "take"],
+          "summary": "You ignore the spirit and stride towards the crystal."
+        },
+        {
+          "nextId": "spirit_blessing",
+          "keywords": ["guidance", "help", "ask"],
+          "summary": "You ask the spirit for guidance."
+        }
+      ]
+    },
+    "crystal_curse": {
+      "id": "crystal_curse",
+      "description": "You seize the Skyfire shard. For a moment it shines brilliantly, then turns ice-cold. A crack of thunder splits the sky as the spirits recoil.",
+      "prompt": "Pain lances up your arm, leaving a dark mark. You manage to stagger away, but the shard feels more like a curse than a gift. This adventure has changed you.",
+      "ending": true,
+      "options": []
+    },
+    "hero_ending": {
+      "id": "hero_ending",
+      "description": "Blessed by the spirits, you carry the Skyfire's power as a quiet promise. In times of danger, Emberfall will have a hidden guardian.",
+      "prompt": "You have completed this chapter as a protector of Emberfall. If you want to explore different choices, say 'restart' to begin again.",
+      "ending": true,
+      "options": []
+    },
+    "secret_ending": {
+      "id": "secret_ending",
+      "description": "You keep the shard's true nature close to your chest. Power hums at your side as you walk, and the future feels full of dangerous possibilities.",
+      "prompt": "Your path drifts into shadowed legend. If you'd like to try a different fate, say 'restart' to begin again.",
+      "ending": true,
+      "options": []
+    },
+    "escape_ending": {
+      "id": "escape_ending",
+      "description": "With the Skyfire shard secured, you make your way out of the Whispering Woods. The village lights of Emberfall welcome you back as a quiet hero.",
+      "prompt": "You have survived your first venture into the Skyfire mystery. Say 'restart' if you wish to play again and take different paths.",
+      "ending": true,
+      "options": []
+    }
+  }
+}

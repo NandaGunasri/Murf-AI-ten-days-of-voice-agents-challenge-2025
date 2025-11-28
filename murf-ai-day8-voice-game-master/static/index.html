@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Voice Game Master – Skyfire Adventure</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Voice Game Master</h1>
+      <p>Shards of the Skyfire • D&D-Style Adventure • Day 8</p>
+    </header>
+
+    <main class="main">
+      <section class="chat-panel">
+        <div id="chatBox" class="chat-box"></div>
+
+        <div class="controls">
+          <div class="input-row">
+            <input
+              id="userInput"
+              type="text"
+              placeholder="Speak or type what your character does..."
+              autocomplete="off"
+            />
+            <button id="sendBtn" class="btn primary">Send</button>
+            <button id="micBtn" class="btn mic" title="Talk to the Game Master">
+              🎤
+            </button>
+          </div>
+          <div class="toolbar">
+            <button id="restartBtn" class="btn ghost">🔄 Restart Story</button>
+            <span id="statusText" class="status-text">Listening is off</span>
+          </div>
+        </div>
+      </section>
+
+      <aside class="side-panel">
+        <div class="card">
+          <h2>Adventure Info</h2>
+          <p id="worldTitle">Loading world...</p>
+          <p id="worldTone" class="tone"></p>
+          <p class="hint">
+            Try saying things like:
+          </p>
+          <ul class="hint-list">
+            <li>“Head into the woods.”</li>
+            <li>“Talk to the traveler.”</li>
+            <li>“Bow to the spirits.”</li>
+            <li>“Grab the crystal and run.”</li>
+          </ul>
+        </div>
+
+        <div class="card mini">
+          <h3>Session</h3>
+          <p><strong>Turns:</strong> <span id="turnCount">0</span></p>
+          <p><strong>Current Scene:</strong> <span id="sceneId">–</span></p>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      Demo only • All story content is fictional • No external accounts used
+    </footer>
+  </div>
+
+  <!-- small beep sounds when mic starts/stops (optional) -->
+  <audio id="beep-start"
+    src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_2e5b79b15a.mp3?filename=click-124467.mp3">
+  </audio>
+  <audio id="beep-stop"
+    src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7f5a3bbd609.mp3?filename=click-124467.mp3">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
