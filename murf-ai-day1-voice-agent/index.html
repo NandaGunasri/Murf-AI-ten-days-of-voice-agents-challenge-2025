@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 - Murf AI Voice Agent</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background: #f4f6fb;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+        }
+        textarea {
+            width: 100%;
+            height: 120px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+        button {
+            margin-top: 15px;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            background: #4b7bec;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #3867d6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Day 1 - Simple Voice Agent</h2>
+    <p>Type anything below and click Speak. This completes your Day-1 challenge.</p>
+
+    <textarea id="textInput">Hello! I am your Day-1 voice agent. Type anything and I will speak it loud.</textarea>
+    <button onclick="speakNow()">Speak</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+[
+  {
+    "userName": "John",
+    "securityIdentifier": "12345",
+    "cardEnding": "4242",
+    "transactionAmount": 249.99,
+    "currency": "USD",
+    "merchantName": "ABC Industries",
+    "transactionTime": "2025-11-20T14:35:00Z",
+    "transactionLocation": "New York, USA",
+    "transactionCategory": "e-commerce",
+    "transactionSource": "alibaba.com",
+    "securityQuestion": "What is your favorite color?",
+    "securityAnswer": "blue",
+    "status": "confirmed_safe",
+    "outcomeNote": "User confirmed transaction as legitimate."
+  }
+]

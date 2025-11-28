@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Day 4 – Teach-the-Tutor: Active Recall Coach</title>
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: #f3f4ff;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+    .box {
+      width: 600px;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .row {
+      margin: 10px 0;
+    }
+    select, textarea, button {
+      font-family: inherit;
+      font-size: 14px;
+    }
+    select {
+      padding: 6px 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-right: 10px;
+    }
+    textarea {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-top: 6px;
+      resize: vertical;
+    }
+    button.mode-btn {
+      padding: 6px 12px;
+      margin-right: 6px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      background: #4f46e5;
+      color: white;
+    }
+    button.mode-btn.active {
+      background: #1d1b8f;
+    }
+    button#sendBtn {
+      margin-top: 8px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      background: #16a34a;
+      color: white;
+    }
+    #agentText {
+      background: #f9fafb;
+      border-radius: 10px;
+      padding: 10px;
+      min-height: 80px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>📚 Day 4 – Teach-the-Tutor Coach</h2>
+    <p id="agentText">
+      Loading tutor… please wait.
+    </p>
+
+    <div class="row">
+      <label><strong>Choose concept:</strong></label>
+      <select id="conceptSelect">
+        <!-- filled by script -->
+      </select>
+    </div>
+
+    <div class="row">
+      <label><strong>Mode:</strong></label><br />
+      <button class="mode-btn active" data-mode="learn" id="btnLearn">Learn</button>
+      <button class="mode-btn" data-mode="quiz" id="btnQuiz">Quiz</button>
+      <button class="mode-btn" data-mode="teach_back" id="btnTeachBack">Teach Back</button>
+    </div>
+
+    <div class="row">
+      <label for="userInput"><strong>Your answer / explanation:</strong></label>
+      <textarea id="userInput" rows="3" placeholder="Type here when the tutor asks you something..."></textarea>
+      <button id="sendBtn">Reply</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "milk-1l",
+    "name": "Fresh Milk 1L",
+    "category": "Groceries",
+    "price": 60,
+    "unit": "1L",
+    "tags": ["dairy"]
+  },
+  {
+    "id": "bread-wheat",
+    "name": "Whole Wheat Bread",
+    "category": "Groceries",
+    "price": 45,
+    "unit": "400g",
+    "tags": ["bread"]
+  },
+  {
+    "id": "eggs-6",
+    "name": "Eggs Pack (6)",
+    "category": "Groceries",
+    "price": 55,
+    "unit": "6 pcs",
+    "tags": ["protein"]
+  },
+  {
+    "id": "peanut-butter",
+    "name": "Peanut Butter Jar",
+    "category": "Groceries",
+    "price": 180,
+    "unit": "350g",
+    "tags": ["spread", "peanut"]
+  },
+  {
+    "id": "pasta-500g",
+    "name": "Pasta 500g",
+    "category": "Groceries",
+    "price": 90,
+    "unit": "500g",
+    "tags": ["pasta"]
+  },
+  {
+    "id": "pasta-sauce",
+    "name": "Tomato Pasta Sauce",
+    "category": "Groceries",
+    "price": 130,
+    "unit": "300g",
+    "tags": ["sauce"]
+  },
+  {
+    "id": "chips-masala",
+    "name": "Masala Potato Chips",
+    "category": "Snacks",
+    "price": 30,
+    "unit": "80g",
+    "tags": ["snack"]
+  },
+  {
+    "id": "cookies-choco",
+    "name": "Chocolate Cookies",
+    "category": "Snacks",
+    "price": 50,
+    "unit": "150g",
+    "tags": ["snack", "sweet"]
+  },
+  {
+    "id": "veg-sandwich",
+    "name": "Veg Sandwich",
+    "category": "Prepared Food",
+    "price": 120,
+    "unit": "1 serving",
+    "tags": ["prepared"]
+  },
+  {
+    "id": "margherita-pizza",
+    "name": "Margherita Pizza",
+    "category": "Prepared Food",
+    "price": 299,
+    "unit": "Medium",
+    "tags": ["prepared"]
+  },
+  {
+    "id": "apple-1kg",
+    "name": "Fresh Apples 1kg",
+    "category": "Groceries",
+    "price": 150,
+    "unit": "1kg",
+    "tags": ["fruit"]
+  },
+  {
+    "id": "banana-6",
+    "name": "Banana (6 pcs)",
+    "category": "Groceries",
+    "price": 40,
+    "unit": "6 pcs",
+    "tags": ["fruit"]
+  }
+]

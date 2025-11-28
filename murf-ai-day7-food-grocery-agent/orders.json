@@ -1,0 +1,41 @@
+[
+  {
+    "orderId": 1,
+    "customerName": "Nanda",
+    "address": "near railwayroad mulaguntapadu Singarayakonda",
+    "items": [
+      {
+        "id": "milk-1l",
+        "name": "Fresh Milk 1L",
+        "quantity": 3,
+        "unit_price": 60,
+        "line_total": 180
+      },
+      {
+        "id": "bread-wheat",
+        "name": "Whole Wheat Bread",
+        "quantity": 2,
+        "unit_price": 45,
+        "line_total": 90
+      },
+      {
+        "id": "margherita-pizza",
+        "name": "Margherita Pizza",
+        "quantity": 1,
+        "unit_price": 299,
+        "line_total": 299
+      },
+      {
+        "id": "peanut-butter",
+        "name": "Peanut Butter Jar",
+        "quantity": 1,
+        "unit_price": 180,
+        "line_total": 180
+      }
+    ],
+    "total": 749,
+    "currency": "INR",
+    "status": "received",
+    "timestamp": "2025-11-27T21:25:09"
+  }
+]

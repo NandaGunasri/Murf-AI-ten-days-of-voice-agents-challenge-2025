@@ -1,0 +1,32 @@
+[
+  {
+    "id": "overview",
+    "question": "What does Zoho One do?",
+    "keywords": ["what do you do", "zoho one", "product", "suite"],
+    "answer": "Zoho One is an all-in-one cloud software suite with 40+ integrated business apps for sales, marketing, finance, HR, support, and collaboration. It helps you run most of your business on a single platform instead of using many separate tools."
+  },
+  {
+    "id": "who_for",
+    "question": "Who is Zoho One for?",
+    "keywords": ["who is this for", "who uses", "target", "for whom"],
+    "answer": "Zoho One is designed for startups, small and medium businesses, and growing teams that want an affordable, integrated system for CRM, finance, HR, and operations. It can also scale to larger enterprises."
+  },
+  {
+    "id": "pricing",
+    "question": "How does pricing work?",
+    "keywords": ["price", "pricing", "cost", "plan"],
+    "answer": "Zoho One offers two main pricing models: an all-employee plan where you buy licenses for all employees at a lower per-employee price, and a flexible user plan where you pay per user for only the people who need access. Both are billed monthly or annually with region-based pricing."
+  },
+  {
+    "id": "free_tier",
+    "question": "Is there a free tier or trial?",
+    "keywords": ["free", "trial", "free tier", "demo"],
+    "answer": "Zoho provides free trials so teams can explore Zoho One and many individual Zoho apps before committing. Some Zoho products also offer free plans, but Zoho One itself is a paid bundle."
+  },
+  {
+    "id": "support",
+    "question": "How can I contact support?",
+    "keywords": ["support", "help", "contact", "email"],
+    "answer": "You can reach Zoho support from within the admin console or product UI, raise a support ticket, or use regional help centers. Zoho also provides detailed online help docs, webinars, and community forums."
+  }
+]

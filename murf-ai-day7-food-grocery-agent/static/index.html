@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Day 7 – Food & Grocery Ordering Voice Agent</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>QuickKart Voice Agent</h1>
+      <p>Food & Grocery Ordering • Day 7</p>
+    </header>
+
+    <main class="main-layout">
+      <section class="chat-section">
+        <div id="chatBox" class="chat-container"></div>
+
+        <div class="input-row">
+          <input
+            id="userInput"
+            type="text"
+            placeholder="Speak or type what you want to order..."
+          />
+          <button id="sendBtn">Send</button>
+        </div>
+      </section>
+
+      <aside class="cart-section">
+        <h2>🛒 Cart</h2>
+        <div id="cartSummary" class="cart-summary">
+          <p>Your cart is empty.</p>
+        </div>
+        <div class="hint">
+          <p>Try saying:</p>
+          <ul>
+            <li>“Add 2 milk and 1 bread.”</li>
+            <li>“I need ingredients for a peanut butter sandwich.”</li>
+            <li>“What’s in my cart?”</li>
+            <li>“Place my order.”</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="app-footer">
+      <small>Demo only • Fake prices • No real orders</small>
+    </footer>
+  </div>
+
+  <audio id="beep-start" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_2e5b79b15a.mp3?filename=click-124467.mp3"></audio>
+  <audio id="beep-stop" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7f5a3bdb60.mp3?filename=click-124467.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

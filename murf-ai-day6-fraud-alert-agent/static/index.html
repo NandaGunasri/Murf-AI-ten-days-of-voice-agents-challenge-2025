@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fraud Alert Voice Agent – Aurora Bank</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>Fraud Alert Voice Agent</h1>
+      <p>Aurora Bank • Secure Voice Verification</p>
+    </header>
+
+    <main id="chatBox" class="chat-container"></main>
+
+    <div class="input-row">
+      <input id="userInput" type="text" placeholder="Speak or type your answer..." />
+      <button id="sendBtn">Send</button>
+    </div>
+
+    <footer class="app-footer">
+      <small>Demo only. No real card or customer data used.</small>
+    </footer>
+  </div>
+
+  <!-- ✅ Permanent, reliable audio links -->
+  <audio id="beep-start" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
+  <audio id="beep-stop" src="https://actions.google.com/sounds/v1/cartoon/cartoon_boing.ogg"></audio>
+
+  <!-- ✅ Voice unlocker and audio stabilizer -->
+  <script>
+    // Wait until speech voices are available
+    function waitForVoices(cb) {
+      const voices = speechSynthesis.getVoices();
+      if (voices.length) return cb();
+      speechSynthesis.onvoiceschanged = () => cb();
+    }
+
+    // Unlock voice on first click
+    document.body.addEventListener("click", () => {
+      if (!window.voiceReady) {
+        const utter = new SpeechSynthesisUtterance("Voice system initialized.");
+        utter.lang = "en-US";
+        waitForVoices(() => {
+          speechSynthesis.speak(utter);
+          console.log("🔊 Voice system unlocked");
+        });
+        window.voiceReady = true;
+      }
+    });
+
+    // Prevent Chrome from putting the speech engine to sleep
+    setInterval(() => {
+      if (!speechSynthesis.speaking) {
+        const keepAlive = new SpeechSynthesisUtterance(".");
+        keepAlive.volume = 0;
+        speechSynthesis.speak(keepAlive);
+      }
+    }, 15000);
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

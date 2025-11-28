@@ -1,0 +1,14 @@
+[
+  {
+    "id": "variables",
+    "title": "Variables",
+    "summary": "Variables store values so you can reuse them later. You can think of a variable like a labelled box in memory where you keep a value such as a number or a word. You can change what is inside that box at any time.",
+    "sample_question": "What is a variable and why is it useful?"
+  },
+  {
+    "id": "loops",
+    "title": "Loops",
+    "summary": "Loops let you repeat an action multiple times without copying the same code again and again. They are useful when you want to do something for each item in a list, or repeat something until a condition is met.",
+    "sample_question": "Explain the difference between a for loop and a while loop."
+  }
+]
