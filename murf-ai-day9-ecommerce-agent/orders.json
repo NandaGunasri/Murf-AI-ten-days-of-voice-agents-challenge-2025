@@ -1,0 +1,110 @@
+[
+  {
+    "id": "order-1",
+    "items": [
+      {
+        "product_id": "mug-001",
+        "quantity": 1
+      }
+    ],
+    "total": 800,
+    "currency": "INR",
+    "created_at": "2025-11-30 09:43:56"
+  },
+  {
+    "id": "order-2",
+    "items": [
+      {
+        "product_id": "mug-001",
+        "quantity": 1
+      }
+    ],
+    "total": 800,
+    "currency": "INR",
+    "created_at": "2025-11-30 09:44:47"
+  },
+  {
+    "id": "order-1764478224",
+    "items": [
+      {
+        "product_id": "mug-001",
+        "product_name": "Stoneware Coffee Mug",
+        "price": 800,
+        "quantity": 1
+      }
+    ],
+    "total": 800,
+    "currency": "INR",
+    "created_at": "2025-11-30 10:20:24"
+  },
+  {
+    "id": "order-1764478270",
+    "items": [
+      {
+        "product_id": "hoodie-001",
+        "product_name": "Grey Hoodie",
+        "price": 999,
+        "quantity": 1
+      }
+    ],
+    "total": 999,
+    "currency": "INR",
+    "created_at": "2025-11-30 10:21:10"
+  },
+  {
+    "id": "order-1764478612",
+    "items": [
+      {
+        "product_id": "cup-001",
+        "product_name": "Blue Ceramic Cup",
+        "price": 350,
+        "quantity": 1
+      }
+    ],
+    "total": 350,
+    "currency": "INR",
+    "created_at": "2025-11-30 10:26:52"
+  },
+  {
+    "id": "order-1764478786",
+    "items": [
+      {
+        "product_id": "mug-001",
+        "product_name": "Stoneware Coffee Mug",
+        "price": 800,
+        "quantity": 1
+      }
+    ],
+    "total": 800,
+    "currency": "INR",
+    "created_at": "2025-11-30 10:29:46"
+  },
+  {
+    "id": "order-1764478827",
+    "items": [
+      {
+        "product_id": "cup-001",
+        "product_name": "Blue Ceramic Cup",
+        "price": 350,
+        "quantity": 1
+      }
+    ],
+    "total": 350,
+    "currency": "INR",
+    "created_at": "2025-11-30 10:30:27"
+  },
+  {
+    "id": "order-1764478841",
+    "items": [
+      {
+        "product_id": "hoodie-001",
+        "product_name": "Grey Hoodie",
+        "price": 999,
+        "quantity": 1
+      }
+    ],
+    "total": 999,
+    "currency": "INR",
+    "created_at": "2025-11-30 10:30:41"
+  }
+]

@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: radial-gradient(circle at top left, #0f172a, #020617);
+  color: #f9fafb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  width: 90%;
+  max-width: 700px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.chat-box {
+  flex: 1;
+  height: 60vh;
+  overflow-y: auto;
+  background: rgba(2,6,23,0.6);
+  border-radius: 14px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.bubble {
+  padding: 8px 12px;
+  margin: 6px 0;
+  border-radius: 16px;
+  max-width: 75%;
+}
+
+.bubble.gm {
+  background: linear-gradient(135deg, #2563eb, #22c55e);
+  align-self: flex-start;
+}
+
+.bubble.player {
+  background: linear-gradient(135deg, #22c55e, #14b8a6);
+  align-self: flex-end;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+}
+
+#userInput {
+  flex: 1;
+  padding: 10px;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #22c55e, #14b8a6);
+  color: #022c22;
+  cursor: pointer;
+  font-weight: bold;
+}
